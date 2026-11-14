@@ -1,0 +1,972 @@
+{
+  "export": {
+    "vendor": "STATsports",
+    "product": "Sonra",
+    "export_version": "4.1",
+    "exported_at_utc": "2026-10-14T12:31:07Z",
+    "units": {
+      "distance": "m",
+      "speed_summary": "km/h",
+      "speed_samples": "m/s"
+    }
+  },
+  "session": {
+    "session_id": "SES-20261014-AM",
+    "team": "Southampton First Team",
+    "session_type": "Training",
+    "date": "2026-10-14",
+    "start_utc": "2026-10-14T10:00:00Z",
+    "end_utc": "2026-10-14T11:15:00Z",
+    "sample_rate_hz": 10,
+    "sample_note": "Samples below are down-sampled to 0.1 Hz for this exercise.",
+    "drills": [
+      {
+        "drill_id": "D1",
+        "name": "Rondo 5v2",
+        "start_utc": "2026-10-14T10:10:00Z",
+        "end_utc": "2026-10-14T10:35:00Z"
+      },
+      {
+        "drill_id": "D2",
+        "name": "11v11 Small-Sided Game",
+        "start_utc": "2026-10-14T10:40:00Z",
+        "end_utc": "2026-10-14T11:10:00Z"
+      }
+    ]
+  },
+  "athletes": [
+    {
+      "athlete_id": "ATH-014",
+      "display_name": "Player 14",
+      "position": "CM",
+      "device_id": "SN-55120",
+      "summary": {
+        "total_distance_m": 6120.4,
+        "hsr_distance_m": 412.8,
+        "sprint_distance_m": 96.1,
+        "max_speed_kmh": 31.2,
+        "accelerations": 38,
+        "decelerations": 41,
+        "avg_hr_bpm": 152,
+        "max_hr_bpm": 188,
+        "player_load": 612.5
+      },
+      "drills": [
+        {
+          "drill_id": "D1",
+          "total_distance_m": 2310.2,
+          "hsr_distance_m": 120.5,
+          "max_speed_kmh": 27.9
+        },
+        {
+          "drill_id": "D2",
+          "total_distance_m": 3810.2,
+          "hsr_distance_m": 292.3,
+          "max_speed_kmh": 31.2
+        }
+      ],
+      "samples": [
+        {
+          "ts": "2026-10-14T10:12:00.000Z",
+          "lat": 50.906215,
+          "lon": -1.390896,
+          "speed_ms": 1.86,
+          "hr_bpm": 133,
+          "hdop": 0.8,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:12:10.000Z",
+          "lat": 50.906168,
+          "lon": -1.390451,
+          "speed_ms": 2.72,
+          "hr_bpm": 142,
+          "hdop": 1.1,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:12:20.000Z",
+          "lat": 50.906727,
+          "lon": -1.390884,
+          "speed_ms": 4.13,
+          "hr_bpm": 173,
+          "hdop": 1.1,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:12:30.000Z",
+          "lat": 50.906327,
+          "lon": -1.390858,
+          "speed_ms": 5.44,
+          "hr_bpm": 137,
+          "hdop": 0.7,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:12:40.000Z",
+          "lat": 50.906602,
+          "lon": -1.390719,
+          "speed_ms": 4.84,
+          "hr_bpm": 160,
+          "hdop": 1.1,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:12:50.000Z",
+          "lat": 50.906503,
+          "lon": -1.390598,
+          "speed_ms": 5.14,
+          "hr_bpm": 176,
+          "hdop": 1.1,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:13:00.000Z",
+          "lat": 50.906646,
+          "lon": -1.390768,
+          "speed_ms": 4.25,
+          "hr_bpm": 173,
+          "hdop": 0.7,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:13:10.000Z",
+          "lat": 50.906389,
+          "lon": -1.391474,
+          "speed_ms": 1.67,
+          "hr_bpm": 168,
+          "hdop": 1.1,
+          "satellites": 18
+        },
+        {
+          "ts": "2026-10-14T10:13:20.000Z",
+          "lat": 50.906601,
+          "lon": -1.390783,
+          "speed_ms": 1.7,
+          "hr_bpm": 129,
+          "hdop": 0.9,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:13:30.000Z",
+          "lat": 50.906699,
+          "lon": -1.390996,
+          "speed_ms": 3.33,
+          "hr_bpm": 132,
+          "hdop": 0.9,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:13:40.000Z",
+          "lat": 50.906689,
+          "lon": -1.391297,
+          "speed_ms": 3.6,
+          "hr_bpm": 175,
+          "hdop": 0.6,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:13:50.000Z",
+          "lat": 50.906264,
+          "lon": -1.390712,
+          "speed_ms": 2.44,
+          "hr_bpm": 176,
+          "hdop": 1.2,
+          "satellites": 17
+        }
+      ]
+    },
+    {
+      "athlete_id": "ATH-007",
+      "display_name": "Player 7",
+      "position": "RW",
+      "device_id": "SN-55107",
+      "summary": {
+        "total_distance_m": 6890.0,
+        "hsr_distance_m": 702.6,
+        "sprint_distance_m": 188.4,
+        "max_speed_kmh": 43.6,
+        "accelerations": 44,
+        "decelerations": 47,
+        "avg_hr_bpm": 149,
+        "max_hr_bpm": 191,
+        "player_load": 701.2
+      },
+      "drills": [
+        {
+          "drill_id": "D1",
+          "total_distance_m": 2650.0,
+          "hsr_distance_m": 260.1,
+          "max_speed_kmh": 30.4
+        },
+        {
+          "drill_id": "D2",
+          "total_distance_m": 4240.0,
+          "hsr_distance_m": 442.5,
+          "max_speed_kmh": 43.6
+        }
+      ],
+      "samples": [
+        {
+          "ts": "2026-10-14T10:12:00.000Z",
+          "lat": 50.906483,
+          "lon": -1.39078,
+          "speed_ms": 4.88,
+          "hr_bpm": 132,
+          "hdop": 1.1,
+          "satellites": 18
+        },
+        {
+          "ts": "2026-10-14T10:12:10.000Z",
+          "lat": 50.906162,
+          "lon": -1.391423,
+          "speed_ms": 4.03,
+          "hr_bpm": 140,
+          "hdop": 0.8,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:12:20.000Z",
+          "lat": 50.906554,
+          "lon": -1.391585,
+          "speed_ms": 4.27,
+          "hr_bpm": 167,
+          "hdop": 0.6,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:12:30.000Z",
+          "lat": 50.906654,
+          "lon": -1.390789,
+          "speed_ms": 5.39,
+          "hr_bpm": 134,
+          "hdop": 0.8,
+          "satellites": 18
+        },
+        {
+          "ts": "2026-10-14T10:12:40.000Z",
+          "lat": 50.906473,
+          "lon": -1.391458,
+          "speed_ms": 2.64,
+          "hr_bpm": 157,
+          "hdop": 1.1,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:12:50.000Z",
+          "lat": 50.906849,
+          "lon": -1.391579,
+          "speed_ms": 2.75,
+          "hr_bpm": 133,
+          "hdop": 0.9,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:13:00.000Z",
+          "lat": 50.906895,
+          "lon": -1.391136,
+          "speed_ms": 3.53,
+          "hr_bpm": 156,
+          "hdop": 1.1,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:10.000Z",
+          "lat": 50.906213,
+          "lon": -1.390971,
+          "speed_ms": 12.11,
+          "hr_bpm": 133,
+          "hdop": 1.2,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:20.000Z",
+          "lat": 50.906507,
+          "lon": -1.390536,
+          "speed_ms": 3.91,
+          "hr_bpm": 168,
+          "hdop": 1.0,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:30.000Z",
+          "lat": 50.906415,
+          "lon": -1.391409,
+          "speed_ms": 3.49,
+          "hr_bpm": 159,
+          "hdop": 1.2,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:13:40.000Z",
+          "lat": 50.906682,
+          "lon": -1.391101,
+          "speed_ms": 3.3,
+          "hr_bpm": 147,
+          "hdop": 0.8,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:13:50.000Z",
+          "lat": 50.90636,
+          "lon": -1.391194,
+          "speed_ms": 4.86,
+          "hr_bpm": 128,
+          "hdop": 0.8,
+          "satellites": 15
+        }
+      ]
+    },
+    {
+      "athlete_id": "ATH-022",
+      "display_name": "Player 22",
+      "position": "CB",
+      "device_id": "SN-55122",
+      "summary": {
+        "total_distance_m": 5480.7,
+        "hsr_distance_m": 210.3,
+        "sprint_distance_m": 34.0,
+        "max_speed_kmh": 29.1,
+        "accelerations": 29,
+        "decelerations": 33,
+        "avg_hr_bpm": 147,
+        "max_hr_bpm": 236,
+        "player_load": 540.9
+      },
+      "drills": [
+        {
+          "drill_id": "D1",
+          "total_distance_m": 2140.7,
+          "hsr_distance_m": 80.0,
+          "max_speed_kmh": 26.2
+        },
+        {
+          "drill_id": "D2",
+          "total_distance_m": 3340.0,
+          "hsr_distance_m": 130.3,
+          "max_speed_kmh": 29.1
+        }
+      ],
+      "samples": [
+        {
+          "ts": "2026-10-14T10:12:00.000Z",
+          "lat": 50.906332,
+          "lon": -1.391153,
+          "speed_ms": 4.35,
+          "hr_bpm": 175,
+          "hdop": 0.8,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:12:10.000Z",
+          "lat": 50.90684,
+          "lon": -1.390693,
+          "speed_ms": 3.86,
+          "hr_bpm": 151,
+          "hdop": 1.1,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:12:20.000Z",
+          "lat": 50.906328,
+          "lon": -1.390477,
+          "speed_ms": 1.91,
+          "hr_bpm": 170,
+          "hdop": 0.7,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:12:30.000Z",
+          "lat": 50.906252,
+          "lon": -1.391152,
+          "speed_ms": 3.24,
+          "hr_bpm": 236,
+          "hdop": 1.2,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:12:40.000Z",
+          "lat": 50.90642,
+          "lon": -1.390549,
+          "speed_ms": 4.75,
+          "hr_bpm": 168,
+          "hdop": 0.9,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:12:50.000Z",
+          "lat": 50.906847,
+          "lon": -1.391107,
+          "speed_ms": 4.38,
+          "hr_bpm": 131,
+          "hdop": 1.0,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:00.000Z",
+          "lat": 50.906488,
+          "lon": -1.390506,
+          "speed_ms": 4.08,
+          "hr_bpm": 146,
+          "hdop": 0.9,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:10.000Z",
+          "lat": 50.906325,
+          "lon": -1.391293,
+          "speed_ms": 3.39,
+          "hr_bpm": 149,
+          "hdop": 1.0,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:13:20.000Z",
+          "lat": 50.906291,
+          "lon": -1.39102,
+          "speed_ms": 2.54,
+          "hr_bpm": 169,
+          "hdop": 1.0,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:13:30.000Z",
+          "lat": 50.90616,
+          "lon": -1.390999,
+          "speed_ms": 2.17,
+          "hr_bpm": 0,
+          "hdop": 1.1,
+          "satellites": 18
+        },
+        {
+          "ts": "2026-10-14T10:13:40.000Z",
+          "lat": 50.906897,
+          "lon": -1.39106,
+          "speed_ms": 2.38,
+          "hr_bpm": 149,
+          "hdop": 0.7,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:50.000Z",
+          "lat": 50.906374,
+          "lon": -1.391491,
+          "speed_ms": 2.48,
+          "hr_bpm": 139,
+          "hdop": 0.7,
+          "satellites": 16
+        }
+      ]
+    },
+    {
+      "athlete_id": "ATH-031",
+      "display_name": "Player 31",
+      "position": "LB",
+      "device_id": "SN-55131",
+      "summary": {
+        "total_distance_m": 14950.2,
+        "hsr_distance_m": 540.0,
+        "sprint_distance_m": 120.7,
+        "max_speed_kmh": 30.8,
+        "accelerations": 41,
+        "decelerations": 39,
+        "avg_hr_bpm": 151,
+        "max_hr_bpm": 186,
+        "player_load": 655.0
+      },
+      "drills": [
+        {
+          "drill_id": "D1",
+          "total_distance_m": 2420.1,
+          "hsr_distance_m": 210.0,
+          "max_speed_kmh": 28.5
+        },
+        {
+          "drill_id": "D2",
+          "total_distance_m": 3610.6,
+          "hsr_distance_m": 330.0,
+          "max_speed_kmh": 30.8
+        }
+      ],
+      "samples": [
+        {
+          "ts": "2026-10-14T10:12:00.000Z",
+          "lat": 50.90681,
+          "lon": -1.3907,
+          "speed_ms": 4.74,
+          "hr_bpm": 140,
+          "hdop": 0.8,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:12:10.000Z",
+          "lat": 50.906401,
+          "lon": -1.391194,
+          "speed_ms": 4.48,
+          "hr_bpm": 141,
+          "hdop": 0.6,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:12:20.000Z",
+          "lat": 50.906201,
+          "lon": -1.390996,
+          "speed_ms": 3.8,
+          "hr_bpm": 151,
+          "hdop": 1.0,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:12:30.000Z",
+          "lat": 50.906317,
+          "lon": -1.391302,
+          "speed_ms": 4.89,
+          "hr_bpm": 133,
+          "hdop": 0.8,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:12:40.000Z",
+          "lat": 50.906779,
+          "lon": -1.390553,
+          "speed_ms": 3.23,
+          "hr_bpm": 147,
+          "hdop": 0.6,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:12:50.000Z",
+          "lat": 0.0,
+          "lon": 0.0,
+          "speed_ms": 3.2,
+          "hr_bpm": 176,
+          "hdop": 9.9,
+          "satellites": 3
+        },
+        {
+          "ts": "2026-10-14T10:13:00.000Z",
+          "lat": 0.0,
+          "lon": 0.0,
+          "speed_ms": 1.79,
+          "hr_bpm": 161,
+          "hdop": 9.9,
+          "satellites": 3
+        },
+        {
+          "ts": "2026-10-14T10:13:10.000Z",
+          "lat": 50.906518,
+          "lon": -1.390782,
+          "speed_ms": 2.4,
+          "hr_bpm": 137,
+          "hdop": 1.2,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:13:20.000Z",
+          "lat": 50.906816,
+          "lon": -1.391498,
+          "speed_ms": 4.3,
+          "hr_bpm": 176,
+          "hdop": 1.1,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:13:30.000Z",
+          "lat": 50.906556,
+          "lon": -1.391555,
+          "speed_ms": 4.63,
+          "hr_bpm": 142,
+          "hdop": 1.0,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:40.000Z",
+          "lat": 50.906609,
+          "lon": -1.390762,
+          "speed_ms": 4.01,
+          "hr_bpm": 161,
+          "hdop": 0.7,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:13:50.000Z",
+          "lat": 50.906253,
+          "lon": -1.391287,
+          "speed_ms": 2.7,
+          "hr_bpm": 165,
+          "hdop": 1.1,
+          "satellites": 14
+        }
+      ]
+    },
+    {
+      "athlete_id": "ATH-009",
+      "display_name": "Player 9",
+      "position": "ST",
+      "device_id": "SN-55109",
+      "summary": {
+        "total_distance_m": 5960.3,
+        "hsr_distance_m": 480.2,
+        "sprint_distance_m": 140.6,
+        "max_speed_kmh": 8.9,
+        "accelerations": 36,
+        "decelerations": -2,
+        "avg_hr_bpm": 150,
+        "max_hr_bpm": 187,
+        "player_load": 598.1
+      },
+      "drills": [
+        {
+          "drill_id": "D1",
+          "total_distance_m": 2290.0,
+          "hsr_distance_m": 180.2,
+          "max_speed_kmh": 8.1
+        },
+        {
+          "drill_id": "D2",
+          "total_distance_m": 3670.3,
+          "hsr_distance_m": 300.0,
+          "max_speed_kmh": 8.9
+        }
+      ],
+      "samples": [
+        {
+          "ts": "2026-10-14T10:12:00.000Z",
+          "lat": 50.906897,
+          "lon": -1.391266,
+          "speed_ms": 1.54,
+          "hr_bpm": 147,
+          "hdop": 0.8,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:12:10.000Z",
+          "lat": 50.906521,
+          "lon": -1.390944,
+          "speed_ms": 5.04,
+          "hr_bpm": 158,
+          "hdop": 0.6,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:12:20.000Z",
+          "lat": 50.906144,
+          "lon": -1.391367,
+          "speed_ms": 4.32,
+          "hr_bpm": 147,
+          "hdop": 1.1,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:12:30.000Z",
+          "lat": 50.906282,
+          "lon": -1.391091,
+          "speed_ms": 3.18,
+          "hr_bpm": 144,
+          "hdop": 0.8,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:12:50.000Z",
+          "lat": 50.906675,
+          "lon": -1.391165,
+          "speed_ms": 1.64,
+          "hr_bpm": 149,
+          "hdop": 0.8,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:12:40.000Z",
+          "lat": 50.906776,
+          "lon": -1.391519,
+          "speed_ms": 4.69,
+          "hr_bpm": 175,
+          "hdop": 0.9,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:00.000Z",
+          "lat": 50.906285,
+          "lon": -1.391334,
+          "speed_ms": 2.75,
+          "hr_bpm": 140,
+          "hdop": 1.1,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:13:10.000Z",
+          "lat": 50.906497,
+          "lon": -1.391375,
+          "speed_ms": 1.94,
+          "hr_bpm": 167,
+          "hdop": 0.7,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:13:20.000Z",
+          "lat": 50.906859,
+          "lon": -1.391424,
+          "speed_ms": 5.14,
+          "hr_bpm": 131,
+          "hdop": 0.8,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:30.000Z",
+          "lat": 50.906214,
+          "lon": -1.391538,
+          "speed_ms": 1.59,
+          "hr_bpm": 166,
+          "hdop": 0.6,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:13:40.000Z",
+          "lat": 50.906807,
+          "lon": -1.390721,
+          "speed_ms": 3.3,
+          "hr_bpm": 173,
+          "hdop": 1.2,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:50.000Z",
+          "lat": 50.906622,
+          "lon": -1.39097,
+          "speed_ms": 2.82,
+          "hr_bpm": 139,
+          "hdop": 0.9,
+          "satellites": 16
+        }
+      ]
+    },
+    {
+      "athlete_id": "ATH-014",
+      "display_name": "Player 14",
+      "position": "CM",
+      "device_id": "SN-55188",
+      "summary": {
+        "total_distance_m": 812.0,
+        "hsr_distance_m": 0.0,
+        "sprint_distance_m": 0.0,
+        "max_speed_kmh": 14.2,
+        "accelerations": 2,
+        "decelerations": 1,
+        "avg_hr_bpm": 98,
+        "max_hr_bpm": 121,
+        "player_load": 61.4
+      },
+      "drills": [
+        {
+          "drill_id": "D1",
+          "total_distance_m": 812.0,
+          "hsr_distance_m": 0.0,
+          "max_speed_kmh": 14.2
+        },
+        {
+          "drill_id": "D2",
+          "total_distance_m": 0.0,
+          "hsr_distance_m": 0.0,
+          "max_speed_kmh": 0.0
+        }
+      ],
+      "samples": [
+        {
+          "ts": "2026-10-14T10:12:00.000Z",
+          "lat": 50.906771,
+          "lon": -1.390418,
+          "speed_ms": 1.96,
+          "hr_bpm": 152,
+          "hdop": 0.9,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:12:10.000Z",
+          "lat": 50.906165,
+          "lon": -1.391096,
+          "speed_ms": 0,
+          "hr_bpm": 145,
+          "hdop": 1.1,
+          "satellites": 18
+        },
+        {
+          "ts": "2026-10-14T10:12:20.000Z",
+          "lat": 50.906404,
+          "lon": -1.390678,
+          "speed_ms": 3.16,
+          "hr_bpm": 141,
+          "hdop": 0.8,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:12:30.000Z",
+          "lat": 50.906664,
+          "lon": -1.391365,
+          "speed_ms": 1.03,
+          "hr_bpm": 131,
+          "hdop": 0.9,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:12:40.000Z",
+          "lat": 50.90669,
+          "lon": -1.391031,
+          "speed_ms": 0.07,
+          "hr_bpm": 151,
+          "hdop": 1.0,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:12:50.000Z",
+          "lat": 50.906133,
+          "lon": -1.391558,
+          "speed_ms": 2.55,
+          "hr_bpm": 153,
+          "hdop": 0.6,
+          "satellites": 14
+        }
+      ]
+    },
+    {
+      "athlete_id": "ATH-018",
+      "display_name": "Player 18",
+      "position": "GK",
+      "device_id": "SN-55118",
+      "summary": {
+        "total_distance_m": 3105.5,
+        "hsr_distance_m": 22.4,
+        "sprint_distance_m": 0.0,
+        "max_speed_kmh": 24.6,
+        "accelerations": 18,
+        "decelerations": 20,
+        "avg_hr_bpm": 128,
+        "max_hr_bpm": 171,
+        "player_load": 301.7
+      },
+      "drills": [
+        {
+          "drill_id": "D1",
+          "total_distance_m": 1305.5,
+          "hsr_distance_m": 10.4,
+          "max_speed_kmh": 22.0
+        },
+        {
+          "drill_id": "D2",
+          "total_distance_m": 1800.0,
+          "hsr_distance_m": 12.0,
+          "max_speed_kmh": 24.6
+        }
+      ],
+      "samples": [
+        {
+          "ts": "2026-10-14T10:12:00.000Z",
+          "lat": 50.90615,
+          "lon": -1.390873,
+          "speed_ms": 1.03,
+          "hr_bpm": 175,
+          "hdop": 0.8,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:12:10.000Z",
+          "lat": 50.906135,
+          "lon": -1.390704,
+          "speed_ms": 3.83,
+          "hr_bpm": 167,
+          "hdop": 1.0,
+          "satellites": 16
+        },
+        {
+          "ts": "2026-10-14T10:12:20.000Z",
+          "lat": 50.906705,
+          "lon": -1.3905,
+          "speed_ms": 1.19,
+          "hr_bpm": 174,
+          "hdop": 1.0,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:12:30.000Z",
+          "lat": 50.906186,
+          "lon": -1.390741,
+          "speed_ms": 0.1,
+          "hr_bpm": 142,
+          "hdop": 0.9,
+          "satellites": 20
+        },
+        {
+          "ts": "2026-10-14T10:12:40.000Z",
+          "lat": 50.906831,
+          "lon": -1.390622,
+          "speed_ms": 1.55,
+          "hr_bpm": 144,
+          "hdop": 0.7,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:12:50.000Z",
+          "lat": 50.906343,
+          "lon": -1.390769,
+          "speed_ms": 0.73,
+          "hr_bpm": 175,
+          "hdop": 0.7,
+          "satellites": 15
+        },
+        {
+          "ts": "2026-10-14T10:13:00.000Z",
+          "lat": 50.906469,
+          "lon": -1.390659,
+          "speed_ms": 1.31,
+          "hr_bpm": 148,
+          "hdop": 1.0,
+          "satellites": 18
+        },
+        {
+          "ts": "2026-10-14T10:13:10.000Z",
+          "lat": 50.906228,
+          "lon": -1.391111,
+          "speed_ms": 0.79,
+          "hr_bpm": 176,
+          "hdop": 1.0,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:13:20.000Z",
+          "lat": 50.906229,
+          "lon": -1.391088,
+          "speed_ms": 2.21,
+          "hr_bpm": 148,
+          "hdop": 0.7,
+          "satellites": 14
+        },
+        {
+          "ts": "2026-10-14T10:13:30.000Z",
+          "lat": 50.906267,
+          "lon": -1.391095,
+          "speed_ms": 1.06,
+          "hr_bpm": 133,
+          "hdop": 1.2,
+          "satellites": 17
+        },
+        {
+          "ts": "2026-10-14T10:13:40.000Z",
+          "lat": 50.906433,
+          "lon": -1.390856,
+          "speed_ms": 0.69,
+          "hr_bpm": 136,
+          "hdop": 1.0,
+          "satellites": 19
+        },
+        {
+          "ts": "2026-10-14T10:13:50.000Z",
+          "lat": 50.906708,
+          "lon": -1.390664,
+          "speed_ms": 2.15,
+          "hr_bpm": 170,
+          "hdop": 0.8,
+          "satellites": 16
+        }
+      ]
+    }
+  ]
+}

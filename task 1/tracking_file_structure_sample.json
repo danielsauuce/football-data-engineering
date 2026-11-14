@@ -1,0 +1,1352 @@
+{
+  "_comment": "Structural excerpt only. A full file contains one match (~140,000 frames at 25 Hz) and is ~400 MB as a single JSON document.",
+  "metadata": {
+    "provider": "TrackCo",
+    "schema_version": "2.3",
+    "match_id": "M-2025-0412",
+    "competition": {
+      "competition_id": "C8",
+      "name": "EFL Championship",
+      "season": "2025/2026"
+    },
+    "kickoff_utc": "2025-11-22T15:00:00Z",
+    "venue": "St Mary's Stadium",
+    "frame_rate_hz": 25,
+    "pitch": {
+      "length_m": 105.0,
+      "width_m": 68.0,
+      "origin": "centre",
+      "units": "metres"
+    }
+  },
+  "teams": [
+    {
+      "team_id": "T001",
+      "name": "Southampton",
+      "side": "home",
+      "players": [
+        {
+          "player_id": "P1000",
+          "shirt_number": 1,
+          "position": "GK"
+        },
+        {
+          "player_id": "P1001",
+          "shirt_number": 2,
+          "position": "RB"
+        },
+        {
+          "player_id": "P1002",
+          "shirt_number": 3,
+          "position": "CB"
+        },
+        {
+          "player_id": "P1003",
+          "shirt_number": 4,
+          "position": "CB"
+        },
+        {
+          "player_id": "P1004",
+          "shirt_number": 5,
+          "position": "LB"
+        },
+        {
+          "player_id": "P1005",
+          "shirt_number": 6,
+          "position": "DM"
+        },
+        {
+          "player_id": "P1006",
+          "shirt_number": 7,
+          "position": "CM"
+        },
+        {
+          "player_id": "P1007",
+          "shirt_number": 8,
+          "position": "CM"
+        },
+        {
+          "player_id": "P1008",
+          "shirt_number": 9,
+          "position": "RW"
+        },
+        {
+          "player_id": "P1009",
+          "shirt_number": 10,
+          "position": "ST"
+        },
+        {
+          "player_id": "P1010",
+          "shirt_number": 11,
+          "position": "LW"
+        }
+      ]
+    },
+    {
+      "team_id": "T002",
+      "name": "Portsmouth",
+      "side": "away",
+      "players": [
+        {
+          "player_id": "P2000",
+          "shirt_number": 1,
+          "position": "GK"
+        },
+        {
+          "player_id": "P2001",
+          "shirt_number": 2,
+          "position": "RB"
+        },
+        {
+          "player_id": "P2002",
+          "shirt_number": 3,
+          "position": "CB"
+        },
+        {
+          "player_id": "P2003",
+          "shirt_number": 4,
+          "position": "CB"
+        },
+        {
+          "player_id": "P2004",
+          "shirt_number": 5,
+          "position": "LB"
+        },
+        {
+          "player_id": "P2005",
+          "shirt_number": 6,
+          "position": "DM"
+        },
+        {
+          "player_id": "P2006",
+          "shirt_number": 7,
+          "position": "CM"
+        },
+        {
+          "player_id": "P2007",
+          "shirt_number": 8,
+          "position": "CM"
+        },
+        {
+          "player_id": "P2008",
+          "shirt_number": 9,
+          "position": "RW"
+        },
+        {
+          "player_id": "P2009",
+          "shirt_number": 10,
+          "position": "ST"
+        },
+        {
+          "player_id": "P2010",
+          "shirt_number": 11,
+          "position": "LW"
+        }
+      ]
+    }
+  ],
+  "periods": [
+    {
+      "period": 1,
+      "start_frame": 0,
+      "end_frame": 70210
+    },
+    {
+      "period": 2,
+      "start_frame": 70211,
+      "end_frame": 141388
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": 100000,
+      "period": 1,
+      "timestamp_ms": 1000000,
+      "game_clock": "22:40.00",
+      "ball": {
+        "x": 12.4,
+        "y": -3.1,
+        "z": 0.11,
+        "status": "alive",
+        "possession": {
+          "team_id": "T001",
+          "player_id": "P1006"
+        }
+      },
+      "tracked_objects": [
+        {
+          "player_id": "P1000",
+          "team_id": "T001",
+          "position": {
+            "x": -17.62,
+            "y": -23.04
+          },
+          "speed_ms": 4.56,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1001",
+          "team_id": "T001",
+          "position": {
+            "x": 32.13,
+            "y": -26.79
+          },
+          "speed_ms": 4.08,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1002",
+          "team_id": "T001",
+          "position": {
+            "x": -46.25,
+            "y": -4.38
+          },
+          "speed_ms": 0.49,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1003",
+          "team_id": "T001",
+          "position": {
+            "x": 5.1,
+            "y": -29.1
+          },
+          "speed_ms": 3.96,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1004",
+          "team_id": "T001",
+          "position": {
+            "x": 13.06,
+            "y": 5.48
+          },
+          "speed_ms": 0.43,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1005",
+          "team_id": "T001",
+          "position": {
+            "x": -45.04,
+            "y": -18.41
+          },
+          "speed_ms": 3.9,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1006",
+          "team_id": "T001",
+          "position": {
+            "x": -21.04,
+            "y": -23.48
+          },
+          "speed_ms": 0.82,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1007",
+          "team_id": "T001",
+          "position": {
+            "x": 6.03,
+            "y": 12.01
+          },
+          "speed_ms": 0.72,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1008",
+          "team_id": "T001",
+          "position": {
+            "x": -12.76,
+            "y": 3.15
+          },
+          "speed_ms": 0.44,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1009",
+          "team_id": "T001",
+          "position": {
+            "x": 11.9,
+            "y": -0.24
+          },
+          "speed_ms": 3.72,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1010",
+          "team_id": "T001",
+          "position": {
+            "x": -3.44,
+            "y": 27.95
+          },
+          "speed_ms": 2.53,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2000",
+          "team_id": "T002",
+          "position": {
+            "x": 29.44,
+            "y": 13.13
+          },
+          "speed_ms": 1.71,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2001",
+          "team_id": "T002",
+          "position": {
+            "x": 2.52,
+            "y": 24.76
+          },
+          "speed_ms": 5.11,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2002",
+          "team_id": "T002",
+          "position": {
+            "x": 10.9,
+            "y": -28.17
+          },
+          "speed_ms": 3.58,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2003",
+          "team_id": "T002",
+          "position": {
+            "x": 25.71,
+            "y": -22.97
+          },
+          "speed_ms": 3.42,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2004",
+          "team_id": "T002",
+          "position": {
+            "x": 46.2,
+            "y": -27.88
+          },
+          "speed_ms": 3.91,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2005",
+          "team_id": "T002",
+          "position": {
+            "x": -15.99,
+            "y": -9.89
+          },
+          "speed_ms": 3.48,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2006",
+          "team_id": "T002",
+          "position": {
+            "x": -43.12,
+            "y": -26.82
+          },
+          "speed_ms": 1.89,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2007",
+          "team_id": "T002",
+          "position": {
+            "x": -43.93,
+            "y": 13.3
+          },
+          "speed_ms": 4.53,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2008",
+          "team_id": "T002",
+          "position": {
+            "x": -21.54,
+            "y": -7.54
+          },
+          "speed_ms": 4.68,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2009",
+          "team_id": "T002",
+          "position": {
+            "x": 44.06,
+            "y": -9.54
+          },
+          "speed_ms": 4.28,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2010",
+          "team_id": "T002",
+          "position": {
+            "x": -44.1,
+            "y": 17.7
+          },
+          "speed_ms": 0.91,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "frame_id": 100001,
+      "period": 1,
+      "timestamp_ms": 1000040,
+      "game_clock": "22:40.04",
+      "ball": {
+        "x": 12.71,
+        "y": -3.05,
+        "z": 0.11,
+        "status": "alive",
+        "possession": {
+          "team_id": "T001",
+          "player_id": "P1006"
+        }
+      },
+      "tracked_objects": [
+        {
+          "player_id": "P1000",
+          "team_id": "T001",
+          "position": {
+            "x": -10.21,
+            "y": 27.51
+          },
+          "speed_ms": 3.48,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1001",
+          "team_id": "T001",
+          "position": {
+            "x": -5.08,
+            "y": 3.26
+          },
+          "speed_ms": 6.18,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1002",
+          "team_id": "T001",
+          "position": {
+            "x": 36.4,
+            "y": -14.62
+          },
+          "speed_ms": 2.91,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1003",
+          "team_id": "T001",
+          "position": {
+            "x": 18.27,
+            "y": -7.89
+          },
+          "speed_ms": 1.62,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1004",
+          "team_id": "T001",
+          "position": {
+            "x": -32.38,
+            "y": -17.69
+          },
+          "speed_ms": 1.63,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1005",
+          "team_id": "T001",
+          "position": {
+            "x": 33.11,
+            "y": -20.97
+          },
+          "speed_ms": 1.97,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1006",
+          "team_id": "T001",
+          "position": {
+            "x": -8.11,
+            "y": -8.63
+          },
+          "speed_ms": 3.96,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1007",
+          "team_id": "T001",
+          "position": {
+            "x": 19.05,
+            "y": 1.02
+          },
+          "speed_ms": 4.32,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1008",
+          "team_id": "T001",
+          "position": {
+            "x": -4.34,
+            "y": 24.48
+          },
+          "speed_ms": 6.66,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1009",
+          "team_id": "T001",
+          "position": {
+            "x": -10.19,
+            "y": -6.99
+          },
+          "speed_ms": 3.37,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1010",
+          "team_id": "T001",
+          "position": {
+            "x": -43.78,
+            "y": -28.56
+          },
+          "speed_ms": 1.46,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2000",
+          "team_id": "T002",
+          "position": {
+            "x": -39.01,
+            "y": 6.65
+          },
+          "speed_ms": 0.72,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2001",
+          "team_id": "T002",
+          "position": {
+            "x": 3.66,
+            "y": 29.63
+          },
+          "speed_ms": 4.3,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2002",
+          "team_id": "T002",
+          "position": {
+            "x": 37.43,
+            "y": 7.53
+          },
+          "speed_ms": 1.04,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2003",
+          "team_id": "T002",
+          "position": {
+            "x": 45.55,
+            "y": 6.75
+          },
+          "speed_ms": 3.32,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2004",
+          "team_id": "T002",
+          "position": {
+            "x": 34.89,
+            "y": 32.54
+          },
+          "speed_ms": 3.26,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2005",
+          "team_id": "T002",
+          "position": {
+            "x": -18.81,
+            "y": -23.49
+          },
+          "speed_ms": 5.25,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2006",
+          "team_id": "T002",
+          "position": {
+            "x": -2.14,
+            "y": 12.68
+          },
+          "speed_ms": 3.61,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2007",
+          "team_id": "T002",
+          "position": {
+            "x": 45.1,
+            "y": 1.86
+          },
+          "speed_ms": 1.03,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2008",
+          "team_id": "T002",
+          "position": {
+            "x": 25.81,
+            "y": -13.33
+          },
+          "speed_ms": 4.5,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2009",
+          "team_id": "T002",
+          "position": {
+            "x": 19.62,
+            "y": -15.77
+          },
+          "speed_ms": 2.57,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2010",
+          "team_id": "T002",
+          "position": {
+            "x": -14.43,
+            "y": -18.3
+          },
+          "speed_ms": 3.79,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "frame_id": 100002,
+      "period": 1,
+      "timestamp_ms": 1000080,
+      "game_clock": "22:40.08",
+      "ball": {
+        "x": 13.02,
+        "y": -3.0,
+        "z": 0.11,
+        "status": "alive",
+        "possession": {
+          "team_id": "T001",
+          "player_id": "P1006"
+        }
+      },
+      "tracked_objects": [
+        {
+          "player_id": "P1000",
+          "team_id": "T001",
+          "position": {
+            "x": 13.64,
+            "y": 7.47
+          },
+          "speed_ms": 5.52,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1001",
+          "team_id": "T001",
+          "position": {
+            "x": 30.61,
+            "y": 21.01
+          },
+          "speed_ms": 5.18,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1002",
+          "team_id": "T001",
+          "position": {
+            "x": -30.01,
+            "y": -0.48
+          },
+          "speed_ms": 5.12,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1003",
+          "team_id": "T001",
+          "position": {
+            "x": 29.01,
+            "y": -1.83
+          },
+          "speed_ms": 1.36,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1004",
+          "team_id": "T001",
+          "position": {
+            "x": -5.28,
+            "y": 28.84
+          },
+          "speed_ms": 6.92,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1005",
+          "team_id": "T001",
+          "position": {
+            "x": -41.95,
+            "y": -26.26
+          },
+          "speed_ms": 3.29,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1006",
+          "team_id": "T001",
+          "position": {
+            "x": -29.56,
+            "y": 8.19
+          },
+          "speed_ms": 6.3,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1007",
+          "team_id": "T001",
+          "position": {
+            "x": -2.05,
+            "y": 10.1
+          },
+          "speed_ms": 5.6,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1008",
+          "team_id": "T001",
+          "position": {
+            "x": 33.46,
+            "y": -25.09
+          },
+          "speed_ms": 2.72,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1009",
+          "team_id": "T001",
+          "position": {
+            "x": -2.2,
+            "y": -21.22
+          },
+          "speed_ms": 5.52,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1010",
+          "team_id": "T001",
+          "position": {
+            "x": -41.33,
+            "y": 29.45
+          },
+          "speed_ms": 5.05,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2000",
+          "team_id": "T002",
+          "position": {
+            "x": -9.86,
+            "y": 29.49
+          },
+          "speed_ms": 5.07,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2001",
+          "team_id": "T002",
+          "position": {
+            "x": 49.31,
+            "y": -31.18
+          },
+          "speed_ms": 4.14,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2002",
+          "team_id": "T002",
+          "position": {
+            "x": 30.65,
+            "y": -23.35
+          },
+          "speed_ms": 5.79,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2003",
+          "team_id": "T002",
+          "position": {
+            "x": 15.73,
+            "y": -9.87
+          },
+          "speed_ms": 3.84,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2004",
+          "team_id": "T002",
+          "position": {
+            "x": -47.86,
+            "y": 19.76
+          },
+          "speed_ms": 5.08,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2005",
+          "team_id": "T002",
+          "position": {
+            "x": 2.66,
+            "y": 28.62
+          },
+          "speed_ms": 3.04,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2006",
+          "team_id": "T002",
+          "position": {
+            "x": 32.62,
+            "y": -19.07
+          },
+          "speed_ms": 1.76,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2007",
+          "team_id": "T002",
+          "position": {
+            "x": 0.12,
+            "y": 17.4
+          },
+          "speed_ms": 2.28,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2008",
+          "team_id": "T002",
+          "position": {
+            "x": 33.42,
+            "y": -28.98
+          },
+          "speed_ms": 5.18,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2009",
+          "team_id": "T002",
+          "position": {
+            "x": 16.25,
+            "y": 20.79
+          },
+          "speed_ms": 3.62,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2010",
+          "team_id": "T002",
+          "position": {
+            "x": 3.18,
+            "y": 1.55
+          },
+          "speed_ms": 0.13,
+          "visibility": "estimated"
+        }
+      ]
+    },
+    {
+      "frame_id": 100003,
+      "period": 1,
+      "timestamp_ms": 1000120,
+      "game_clock": "22:40.12",
+      "ball": {
+        "x": 13.33,
+        "y": -2.95,
+        "z": 0.11,
+        "status": "alive",
+        "possession": {
+          "team_id": "T001",
+          "player_id": "P1006"
+        }
+      },
+      "tracked_objects": [
+        {
+          "player_id": "P1000",
+          "team_id": "T001",
+          "position": {
+            "x": 27.65,
+            "y": 7.16
+          },
+          "speed_ms": 5.43,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1001",
+          "team_id": "T001",
+          "position": {
+            "x": -32.77,
+            "y": -1.75
+          },
+          "speed_ms": 5.08,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1002",
+          "team_id": "T001",
+          "position": {
+            "x": -17.4,
+            "y": 1.21
+          },
+          "speed_ms": 3.89,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1003",
+          "team_id": "T001",
+          "position": {
+            "x": 38.32,
+            "y": -29.25
+          },
+          "speed_ms": 1.34,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1004",
+          "team_id": "T001",
+          "position": {
+            "x": 27.23,
+            "y": 0.51
+          },
+          "speed_ms": 3.93,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1005",
+          "team_id": "T001",
+          "position": {
+            "x": -5.68,
+            "y": 7.43
+          },
+          "speed_ms": 3.54,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1006",
+          "team_id": "T001",
+          "position": {
+            "x": 19.27,
+            "y": -3.15
+          },
+          "speed_ms": 3.73,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1007",
+          "team_id": "T001",
+          "position": {
+            "x": 0.78,
+            "y": -16.65
+          },
+          "speed_ms": 3.66,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1008",
+          "team_id": "T001",
+          "position": {
+            "x": 42.28,
+            "y": 25.92
+          },
+          "speed_ms": 1.42,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1009",
+          "team_id": "T001",
+          "position": {
+            "x": -36.29,
+            "y": -24.97
+          },
+          "speed_ms": 3.09,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1010",
+          "team_id": "T001",
+          "position": {
+            "x": 17.12,
+            "y": -4.73
+          },
+          "speed_ms": 1.49,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2000",
+          "team_id": "T002",
+          "position": {
+            "x": 28.39,
+            "y": 26.2
+          },
+          "speed_ms": 1.08,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2001",
+          "team_id": "T002",
+          "position": {
+            "x": -35.7,
+            "y": 25.27
+          },
+          "speed_ms": 6.77,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2002",
+          "team_id": "T002",
+          "position": {
+            "x": 24.67,
+            "y": -26.79
+          },
+          "speed_ms": 6.19,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2003",
+          "team_id": "T002",
+          "position": {
+            "x": 48.99,
+            "y": 21.94
+          },
+          "speed_ms": 1.13,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2004",
+          "team_id": "T002",
+          "position": {
+            "x": 49.41,
+            "y": -6.35
+          },
+          "speed_ms": 2.95,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2005",
+          "team_id": "T002",
+          "position": {
+            "x": -18.15,
+            "y": 14.66
+          },
+          "speed_ms": 0.14,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2006",
+          "team_id": "T002",
+          "position": {
+            "x": -5.95,
+            "y": -31.81
+          },
+          "speed_ms": 2.32,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2007",
+          "team_id": "T002",
+          "position": {
+            "x": 1.23,
+            "y": -28.76
+          },
+          "speed_ms": 6.9,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2008",
+          "team_id": "T002",
+          "position": {
+            "x": 47.17,
+            "y": -26.08
+          },
+          "speed_ms": 1.86,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2009",
+          "team_id": "T002",
+          "position": {
+            "x": 40.59,
+            "y": -21.02
+          },
+          "speed_ms": 5.29,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2010",
+          "team_id": "T002",
+          "position": {
+            "x": 34.96,
+            "y": 11.61
+          },
+          "speed_ms": 6.62,
+          "visibility": "estimated"
+        }
+      ]
+    },
+    {
+      "frame_id": 100004,
+      "period": 1,
+      "timestamp_ms": 1000160,
+      "game_clock": "22:40.16",
+      "ball": {
+        "x": 13.64,
+        "y": -2.9,
+        "z": 0.11,
+        "status": "alive",
+        "possession": {
+          "team_id": "T001",
+          "player_id": "P1006"
+        }
+      },
+      "tracked_objects": [
+        {
+          "player_id": "P1000",
+          "team_id": "T001",
+          "position": {
+            "x": -35.06,
+            "y": 27.67
+          },
+          "speed_ms": 3.99,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1001",
+          "team_id": "T001",
+          "position": {
+            "x": -41.05,
+            "y": -29.2
+          },
+          "speed_ms": 4.82,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1002",
+          "team_id": "T001",
+          "position": {
+            "x": 39.53,
+            "y": -15.25
+          },
+          "speed_ms": 0.12,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1003",
+          "team_id": "T001",
+          "position": {
+            "x": 30.16,
+            "y": -27.47
+          },
+          "speed_ms": 5.99,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1004",
+          "team_id": "T001",
+          "position": {
+            "x": -23.55,
+            "y": -24.97
+          },
+          "speed_ms": 0.08,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P1005",
+          "team_id": "T001",
+          "position": {
+            "x": 42.67,
+            "y": -15.32
+          },
+          "speed_ms": 0.9,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1006",
+          "team_id": "T001",
+          "position": {
+            "x": 43.81,
+            "y": 30.97
+          },
+          "speed_ms": 1.83,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1007",
+          "team_id": "T001",
+          "position": {
+            "x": -29.82,
+            "y": -12.41
+          },
+          "speed_ms": 2.14,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1008",
+          "team_id": "T001",
+          "position": {
+            "x": -21.0,
+            "y": 0.01
+          },
+          "speed_ms": 1.25,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1009",
+          "team_id": "T001",
+          "position": {
+            "x": 30.37,
+            "y": 32.64
+          },
+          "speed_ms": 0.26,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P1010",
+          "team_id": "T001",
+          "position": {
+            "x": 23.31,
+            "y": 3.37
+          },
+          "speed_ms": 1.33,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2000",
+          "team_id": "T002",
+          "position": {
+            "x": -25.43,
+            "y": -3.49
+          },
+          "speed_ms": 4.61,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2001",
+          "team_id": "T002",
+          "position": {
+            "x": 15.65,
+            "y": 3.03
+          },
+          "speed_ms": 6.22,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2002",
+          "team_id": "T002",
+          "position": {
+            "x": 18.77,
+            "y": 31.84
+          },
+          "speed_ms": 2.4,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2003",
+          "team_id": "T002",
+          "position": {
+            "x": -9.53,
+            "y": -10.06
+          },
+          "speed_ms": 0.38,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2004",
+          "team_id": "T002",
+          "position": {
+            "x": -48.57,
+            "y": 8.28
+          },
+          "speed_ms": 6.16,
+          "visibility": "estimated"
+        },
+        {
+          "player_id": "P2005",
+          "team_id": "T002",
+          "position": {
+            "x": -33.68,
+            "y": -27.42
+          },
+          "speed_ms": 5.89,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2006",
+          "team_id": "T002",
+          "position": {
+            "x": 9.88,
+            "y": 12.72
+          },
+          "speed_ms": 0.32,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2007",
+          "team_id": "T002",
+          "position": {
+            "x": -34.25,
+            "y": -3.58
+          },
+          "speed_ms": 1.84,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2008",
+          "team_id": "T002",
+          "position": {
+            "x": 47.26,
+            "y": 3.11
+          },
+          "speed_ms": 1.71,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2009",
+          "team_id": "T002",
+          "position": {
+            "x": -28.21,
+            "y": -20.92
+          },
+          "speed_ms": 2.35,
+          "visibility": "visible"
+        },
+        {
+          "player_id": "P2010",
+          "team_id": "T002",
+          "position": {
+            "x": -2.54,
+            "y": 0.18
+          },
+          "speed_ms": 1.41,
+          "visibility": "visible"
+        }
+      ]
+    }
+  ]
+}

@@ -25,8 +25,8 @@ rules:
     description: Flag GPS samples where both coordinates are zero
     table: gps_sample
     fields:
-      - latitude
-      - longitude
+      - lat
+      - lon
     operator: both_equal
     threshold: 0
     severity: high
@@ -64,7 +64,7 @@ rules:
 
   - rule_id: NEGATIVE_DECELERATIONS
     description: Flag negative deceleration counts
-    table: athlete_drill_metric
+    table: athlete_summary
     field: decelerations
     operator: less_than
     threshold: 0

@@ -1,0 +1,57 @@
+
+version: "1.0"
+
+rules:
+  - rule_id: GPS_SPEED_SPIKE
+    description: Flag GPS samples with unusually high speed
+    table: gps_sample
+    field: speed_ms
+    operator: greater_than
+    threshold: 10.0
+    severity: high
+    enabled: true
+
+  - rule_id: SUMMARY_SPEED_SPIKE
+    description: Flag unusually high maximum speed in an athlete session summary
+    table: athlete_summary
+    field: max_speed_kmh
+    operator: greater_than
+    threshold: 36.0
+    severity: high
+    enabled: true
+
+  - rule_id: HEART_RATE_ABOVE_PLAUSIBLE
+    description: Flag maximum heart rate above the supplied guidance
+    table: athlete_summary
+    field: max_hr_bpm
+    operator: greater_than
+    threshold: 220
+    severity: high
+    enabled: true
+
+  - rule_id: HEART_RATE_ZERO
+    description: Flag zero heart-rate readings, which may indicate sensor contact problems
+    table: gps_sample
+    field: hr_bpm
+    operator: equals
+    threshold: 0
+    severity: medium
+    enabled: true
+
+  - rule_id: NEGATIVE_DECELERATIONS
+    description: Flag negative deceleration counts
+    table: athlete_drill_metric
+    field: decelerations
+    operator: less_than
+    threshold: 0
+    severity: medium
+    enabled: true
+
+  - rule_id: GPS_ZERO_COORDINATES
+    description: Flag GPS samples with coordinates at zero, zero
+    table: gps_sample
+    field: latitude
+    operator: equals
+    threshold: 0
+    severity: high
+    enabled: true

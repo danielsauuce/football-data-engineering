@@ -47,11 +47,15 @@ rules:
     severity: medium
     enabled: true
 
+  
   - rule_id: GPS_ZERO_COORDINATES
-    description: Flag GPS samples with coordinates at zero, zero
+    description: Flag GPS samples where both coordinates are zero
     table: gps_sample
-    field: latitude
-    operator: equals
+    fields:
+      - latitude
+      - longitude
+    operator: both_equal
     threshold: 0
     severity: high
     enabled: true
+

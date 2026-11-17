@@ -13,6 +13,7 @@ def test_pipeline_rejects_missing_input(tmp_path):
         run_pipeline(missing_file)
 
 
+
 def test_pipeline_accepts_existing_input(tmp_path):
     """An existing file should reach the pipeline."""
 

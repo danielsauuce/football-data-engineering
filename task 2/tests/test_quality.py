@@ -174,6 +174,78 @@ def test_disabled_rules_are_not_applied():
     assert issues.empty
 
 
+def test_flags_coordinates_when_both_are_zero():
+    tables = {
+        "gps_sample": pd.DataFrame(
+            [
+                {
+                    "session_id": "SESSION-1",
+                    "athlete_id": "ATH-031",
+                    "assignment_id": "ASSIGNMENT-1",
+                    "sample_seq": 5,
+                    "latitude": 0,
+                    "longitude": 0,
+                },
+                {
+                    "session_id": "SESSION-1",
+                    "athlete_id": "ATH-014",
+                    "assignment_id": "ASSIGNMENT-2",
+                    "sample_seq": 6,
+                    "latitude": 0,
+                    "longitude": -1.2,
+                },
+            ]
+        )
+    }
+
+    config = {
+        "version": "1.0",
+        "rules": [
+            {
+                "rule_id": "GPS_ZERO_COORDINATES",
+                "table": "gps_sample",
+                "fields": ["latitude", "longitude"],
+                "operator": "both_equal",
+                "threshold": 0,
+                "severity": "high",
+                "enabled": True,
+            }
+        ],
+    }
+
+    issues = run_quality_checks(
+        tables,
+        config,
+        run_id="RUN-001",
+        input_sha256="abc123",
+    )
+
+    assert len(issues) == 1
+    assert issues.iloc[0]["athlete_id"] == "ATH-031"
+    assert issues.iloc[0]["field"] == "latitude, longitude"
+
+
+def test_both_equal_rejects_wrong_number_of_fields():
+    dataframe = pd.DataFrame(
+        [{"latitude": 0, "longitude": 0}]
+    )
+
+    try:
+        from gps_pipeline.quality import _evaluate_compound_condition
+
+        _evaluate_compound_condition(
+            dataframe,
+            ["latitude"],
+            "both_equal",
+            0,
+        )
+    except ValueError as exc:
+        assert "exactly two fields" in str(exc)
+    else:
+        raise AssertionError("Expected ValueError")
+
+
+
 def test_quality_checks_do_not_modify_source_data():
     original = pd.DataFrame(
         [

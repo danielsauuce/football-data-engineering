@@ -60,7 +60,6 @@ rules:
     threshold: 220
     severity: high
     enabled: true
---
 
   - rule_id: NEGATIVE_DECELERATIONS
     description: Flag negative deceleration counts

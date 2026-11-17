@@ -1,0 +1,12 @@
+[
+  {
+    "run_id": "4d4f7975-9af1-4b83-b8c6-47a4441dd8c2",
+    "source_file": "gps_session_SES-20261014-AM.json",
+    "landing_path": "/Users/sauuce/Desktop/Football Data Engineering/task 2/data/landing/gps_session_SES-20261014-AM.json",
+    "input_sha256": "81ec93a4bce5699b3e5fd78042e49129c99fd366869d109792e508e003a92d7a",
+    "rule_set_version": "1.0",
+    "registered_at_utc": "2026-11-17T15:23:11.067701+00:00",
+    "status": "completed",
+    "completed_at_utc": "2026-11-17T15:23:12.058740+00:00"
+  }
+]

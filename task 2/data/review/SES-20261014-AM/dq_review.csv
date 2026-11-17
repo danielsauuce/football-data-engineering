@@ -1,0 +1,9 @@
+issue_id,rule_id,table_name,row_reference,severity,observed_value,expected_condition,decision,reviewed_by,reviewed_at_utc,review_comment
+9f909d7c3539a1fd235bcf31be913c6ffc3096fa171bdae49220bdd5c0976aed,GPS_SPEED_SPIKE,gps_sample,SES-20261014-AM|ATH-007|SN-55107|sample:7,high,12.11,speed_ms greater_than 10.0,,,,
+f48965614574bb87e9da56a9453566b44c66d1a679a26ba87994438f2e9e4314,HEART_RATE_ZERO,gps_sample,SES-20261014-AM|ATH-022|SN-55122|sample:9,medium,0,hr_bpm equals 0,,,,
+1d5f2dc685005c60b19ee62575fe5da59c2946bf67e5678d9eec6c7e934ce765,GPS_ZERO_COORDINATES,gps_sample,SES-20261014-AM|ATH-031|SN-55131|sample:5,high,"{""lat"": 0.0, ""lon"": 0.0}","lat, lon both_equal 0",,,,
+5119077d0bb41f53bbe5cbaa14074994c30cd85d79cda1e9a4937532c340add4,GPS_ZERO_COORDINATES,gps_sample,SES-20261014-AM|ATH-031|SN-55131|sample:6,high,"{""lat"": 0.0, ""lon"": 0.0}","lat, lon both_equal 0",,,,
+9471d142453bd7ecc4608982668ee763e40be4ae1fb1f149fb06e2969ca578f0,GPS_TIMESTAMP_OUT_OF_ORDER,gps_sample,SES-20261014-AM|ATH-009|SN-55109|sample:5,medium,"""2026-10-14 10:12:40+00:00""",ts must be later than previous sample,,,,
+b79970f4836a95000bae1d6a1d1c75597dd46f019df6891b980e258ead3bee52,SUMMARY_SPEED_SPIKE,athlete_summary,SES-20261014-AM|ATH-007|SN-55107,high,43.6,max_speed_kmh greater_than 36.0,,,,
+3a3cc930a0c638af2de9787a2b1e7286320ecf033c246e41f11ba15ee6134423,HEART_RATE_ABOVE_PLAUSIBLE,athlete_summary,SES-20261014-AM|ATH-022|SN-55122,high,236,max_hr_bpm greater_than 220,,,,
+89317752c46cdff191d671bca25067633d02322ce318e39f44ea8a07ceae94a5,NEGATIVE_DECELERATIONS,athlete_summary,SES-20261014-AM|ATH-009|SN-55109,medium,-2,decelerations less_than 0,,,,

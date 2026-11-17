@@ -12,6 +12,10 @@ SUPPORTED_OPERATORS = {
     "equals",
 }
 
+SUPPORTED_COMPOUND_OPERATORS = {
+    "both_equal",
+}
+
 
 def _make_issue_id(
     rule_set_version: str,
@@ -19,9 +23,8 @@ def _make_issue_id(
     table_name: str,
     row_reference: str,
 ) -> str:
-    """
-    Generate a repeatable issue ID for the same rule and source row.
-    """
+    """Generate a repeatable ID for a rule violation."""
+
     identity = "|".join(
         [
             rule_set_version,
@@ -39,9 +42,7 @@ def _get_row_reference(
     table_name: str,
     row_index: Any,
 ) -> str:
-    """
-    Build a readable reference to the record that triggered an issue.
-    """
+    """Build a reference to the source record that triggered an issue."""
 
     if "assignment_id" in row and pd.notna(row["assignment_id"]):
         reference = str(row["assignment_id"])
@@ -65,12 +66,10 @@ def _evaluate_condition(
     operator: str,
     threshold: Any,
 ) -> pd.Series:
-    """
-    Evaluate a configured rule against a DataFrame column.
-    """
+    """Evaluate a single-field quality rule."""
 
     if operator not in SUPPORTED_OPERATORS:
-        raise ValueError(f"Unsupported quality operator: {operator}")
+        raise ValueError(f"Unsupported single-field operator: {operator}")
 
     if operator == "greater_than":
         return series > threshold
@@ -81,7 +80,27 @@ def _evaluate_condition(
     if operator == "equals":
         return series == threshold
 
-    raise ValueError(f"Unsupported quality operator: {operator}")
+    raise ValueError(f"Unsupported operator: {operator}")
+
+
+def _evaluate_compound_condition(
+    dataframe: pd.DataFrame,
+    fields: list[str],
+    operator: str,
+    threshold: Any,
+) -> pd.Series:
+    """Evaluate a rule involving multiple fields."""
+
+    if operator not in SUPPORTED_COMPOUND_OPERATORS:
+        raise ValueError(f"Unsupported compound operator: {operator}")
+
+    if operator == "both_equal":
+        if len(fields) != 2:
+            raise ValueError("The both_equal operator requires exactly two fields")
+
+        return dataframe[fields[0]].eq(threshold) & dataframe[fields[1]].eq(threshold)
+
+    raise ValueError(f"Unsupported compound operator: {operator}")
 
 
 def run_quality_checks(
@@ -93,8 +112,8 @@ def run_quality_checks(
     """
     Apply enabled YAML quality rules to Silver tables.
 
-    Returns one issue record for each violating source record and rule.
-    Source tables are never modified.
+    Returns one issue record per violating source record and rule.
+    Source DataFrames are never modified.
     """
 
     issues: list[dict[str, Any]] = []
@@ -108,7 +127,6 @@ def run_quality_checks(
 
         rule_id = rule["rule_id"]
         table_name = rule["table"]
-        field = rule["field"]
         operator = rule["operator"]
         threshold = rule["threshold"]
         severity = rule["severity"]
@@ -118,17 +136,39 @@ def run_quality_checks(
 
         dataframe = tables[table_name]
 
-        if field not in dataframe.columns:
-            raise ValueError(
-                f"Rule {rule_id} references missing field "
-                f"'{field}' in table '{table_name}'"
-            )
+        if "fields" in rule:
+            fields = rule["fields"]
 
-        violations = _evaluate_condition(
-            dataframe[field],
-            operator,
-            threshold,
-        ).fillna(False)
+            missing_fields = [name for name in fields if name not in dataframe.columns]
+
+            if missing_fields:
+                raise ValueError(
+                    f"Rule {rule_id} references missing fields: " f"{missing_fields}"
+                )
+
+            violations = _evaluate_compound_condition(
+                dataframe,
+                fields,
+                operator,
+                threshold,
+            ).fillna(False)
+
+            field = ", ".join(fields)
+
+        else:
+            field = rule["field"]
+
+            if field not in dataframe.columns:
+                raise ValueError(
+                    f"Rule {rule_id} references missing field "
+                    f"'{field}' in table '{table_name}'"
+                )
+
+            violations = _evaluate_condition(
+                dataframe[field],
+                operator,
+                threshold,
+            ).fillna(False)
 
         for row_index, row in dataframe.loc[violations].iterrows():
 
@@ -145,9 +185,17 @@ def run_quality_checks(
                 row_reference,
             )
 
-            observed_value = row[field]
+            if "fields" in rule:
+                observed_value = {name: row[name] for name in rule["fields"]}
+            else:
+                observed_value = row[field]
 
-            if hasattr(observed_value, "item"):
+            if isinstance(observed_value, dict):
+                observed_value = {
+                    key: (value.item() if hasattr(value, "item") else value)
+                    for key, value in observed_value.items()
+                }
+            elif hasattr(observed_value, "item"):
                 observed_value = observed_value.item()
 
             issues.append(

@@ -1,4 +1,3 @@
-
 import pytest
 
 from gps_pipeline.pipeline import run_pipeline
@@ -11,7 +10,6 @@ def test_pipeline_rejects_missing_input(tmp_path):
 
     with pytest.raises(FileNotFoundError):
         run_pipeline(missing_file)
-
 
 
 def test_pipeline_accepts_existing_input(tmp_path):

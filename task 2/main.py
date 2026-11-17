@@ -7,9 +7,7 @@ from gps_pipeline.pipeline import run_pipeline
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
 
-    parser = argparse.ArgumentParser(
-        description="Process a GPS session export."
-    )
+    parser = argparse.ArgumentParser(description="Process a GPS session export.")
 
     parser.add_argument(
         "--input",
